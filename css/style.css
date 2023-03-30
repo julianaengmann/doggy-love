@@ -1,0 +1,110 @@
+:root{
+    --brown: #4D2B31;
+    --yellow: #E9933D;
+    --red: #B8002B;
+    --swiper-theme-color: #B8002B;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Kalam', cursive;
+}
+
+body{
+    background-color: var(--brown);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--yellow);
+}
+
+.container{
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 65px;
+    background-color: var(--yellow);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.45);    
+}
+
+.logo img{
+    height: 50px;
+}
+
+.banner{
+    margin-bottom: 12px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 4px 0;
+}
+
+.card-flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+
+.card{
+    max-width: 280px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__box{
+    color: var(--brown);
+    background-color: var(--yellow);
+    margin: 16px 0 24px 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.45);
+}
+
+.card h2{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card p{
+    padding: 12px 0;
+}
+
+.btn-cta{
+    width: 120px;
+    background-color: var(--red);
+    color: var(--yellow);
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 6px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+footer{
+    height: 60px;
+    background-color: var(--red);    
+    margin-top: 24px;
+    display: flex;    
+    justify-content: space-evenly;
+    align-items: center;
+}
